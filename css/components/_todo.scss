@@ -1,0 +1,39 @@
+div.s_todo {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    word-break: break-all;
+
+    span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    button {
+        min-width: 5.7rem;
+    }
+}
+
+@media (max-width: 577px) {
+    div.s_todo {
+        span {
+            font-size: 1rem;
+        }
+        button {
+            font-size: 1rem
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    div.s_todo {
+        span {
+            font-size: 1.5rem;
+        }
+        button {
+            font-size: 1.3rem
+        }
+    }
+}

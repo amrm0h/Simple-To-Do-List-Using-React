@@ -1,0 +1,67 @@
+form {
+    width: 100%;
+    display: flex;
+    margin: 0;
+
+
+    input {
+        flex-grow: 1;
+        background-color: #322b2b;
+        border: none;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 1.2rem;
+        color: white;
+        font-style: italic;
+        border-bottom-left-radius: 8px;
+    }
+
+    button.button {
+        text-decoration: none;
+        background-color: #bdc4bd;
+        padding: 10px;
+        font-weight: bold;
+        color: #1b1a1a;
+        box-shadow: 0 2px 0 darken(#bdc4bd, 40%);
+        border-bottom-right-radius: 8px;
+    }
+
+    & ~ p.err_msg {
+        background-color: red;
+        width: 87%;
+        margin: 10px auto 0;
+        font-size: 1.4rem;
+        color: aqua;
+        padding: 4px;
+        border-radius: 5px;
+    }
+}
+
+
+
+@media (max-width: 577px) {
+    form {
+        flex-direction: column;
+        input {
+            font-size: 1rem;
+            border-radius: 0;
+        }
+    
+        button.button {
+            border-bottom-left-radius: 8px;
+        }
+    
+        & ~ p.err_msg {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    form {
+        input {
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.2s linear; 
+}
+
+html {
+    font-size: 10px
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: center;
+    background-color: #676666;
+    position: relative;
+    min-height: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+
+div.app_container {
+    max-width: 50%;
+    margin: 2rem auto;
+}
+
+@media (max-width: 577px) {
+    div.app_container {
+        margin: 1.5rem auto;
+    }
+}
+
+@media (min-width: 992px) {
+    div.app_container {
+        margin: 3rem auto;
+    }
+}
+
+input,input:focus,input:active {
+    outline: none
+}
+button,button:active,button:focus {
+    outline: none
+}
+
+button.button {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #2a0e0e;
+    text-decoration: underline;
+    padding-right:  4px;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        opacity: .7;
+    }
+}
+
